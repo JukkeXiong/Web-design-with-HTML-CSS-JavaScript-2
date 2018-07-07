@@ -1,0 +1,429 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+
+body {
+	overflow-x: hidden;
+	font-family: Indie Flower;
+}
+
+h1 {
+	text-align: center;
+}
+
+.newRecipe h3 {
+	text-align: center;
+}
+
+input, button {
+	outline: none;
+}
+
+/*==========Navbar Logo Starts=================*/
+
+.logo {
+	margin-left: 7em;
+}
+
+/*==========Navbar Logo END=================*/
+
+div.mob {
+	display: none;
+}
+
+/*==========Navigation Bar==================*/
+div.desk {
+	width: 100%;
+	display: flex;
+	position: absolute;
+	grid-area: desk;
+}
+
+ul.navbarDesk {
+	padding-left: 10%;
+	list-style: none;
+	width: 100%;
+	align-content: center;
+	grid-area: ;
+}
+
+/*========Nav button styling=========*/
+ul.navbarDesk li {
+	font-weight: 700;
+	display: inline-block;
+	background-color: #333;
+	width: 10em;
+	border: 1px solid #000;
+	text-align: center;
+	
+}
+/*======styling and centering link========*/
+li a {
+	color: white;
+	text-decoration: none;
+	text-align: center;
+}
+
+
+/*======Hides extra lists under About Me*/
+ul.navbarDesk li ul li {
+	display: none;
+	
+}
+
+/*=======ul stays in same position when hovered==========*/
+ul.navbarDesk li:hover ul {
+	position: fixed;
+}
+
+/*=======Hover effect shows display navbar ======*/
+ul.navbarMob li ul{
+	display: none;
+}
+
+ul.navbarDesk li:hover ul li {
+	display: block;
+	text-align: center;
+}
+
+/*=======Navbar ENDS===============*/
+
+
+/* =======Banner Starts ===========*/
+.banner {
+	background: url('https://images.pexels.com/photos/441795/pexels-photo-441795.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260');
+	background-size: cover;
+	background-position: center;
+	height: 90vh;
+	grid-area: banner;
+}
+
+/*========Banner header: "The Food Blog" ==========*/
+.banner h1 {
+	color: white;
+	padding-top: 3.5em;
+	font-size: 3em;
+	letter-spacing: 0.3em;
+	font-weight: 700;
+	
+	
+
+}
+
+.banner h3 {
+	margin-top: 0.5em;
+	color: white;
+	text-align: center;
+	
+}
+
+/* =======Banner Ends ===========*/
+
+/*======Search Input ========*/
+.search {
+	text-align: center;
+	padding-top: 6em;
+}
+
+.searchStyle {
+	padding: 0.25em 0;
+	border-radius: 1em;
+	text-indent: 1em;
+	outline: none;
+	width: 350px;
+}
+
+/* End of search input */
+
+/* Recipe Section starts*/
+
+.newRecipe {
+	background: white;
+	height: auto;
+	width: 100%;
+	display: inline-block;
+	grid-template-rows: auto;	
+	padding: 1em;
+	grid-area: recipe;
+
+}
+
+.box {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	grid-template-rows: auto;
+	grid-gap: 1%;
+}
+
+.newRecipe h1 {
+	grid-row: 1;
+	grid-column: span 4;
+	height: 1em;
+	color: rgb(72, 174, 183);
+}
+
+.newRecipe h3 {
+	grid-row: 2;
+	grid-column: span 4;
+	height: 1em;
+	color: rgb(72, 174, 183);
+}
+
+.contentBox1 {
+	position: relative;
+	grid-row: 1;
+	grid-column: 1;
+
+}
+
+.contentBox2 {
+	position: relative;
+	grid-row: 1;
+	grid-column: 2;
+}
+
+.contentBox3 {
+	position: relative;
+	grid-row: 1;
+	grid-column: 3;
+
+}
+
+.contentBox4 {
+	position: relative;
+	grid-row: 1;
+	grid-column: 4;
+}
+
+
+.content {
+	width: 100%;
+	background-size: cover;
+	height: 30vh;
+	margin: 2em 0;
+	position: relative;
+	display: inline-grid;
+	background-position: center;
+	align-content: left;
+	grid-row: 4;
+}
+
+
+.recipe1 {
+	background: url('https://images.unsplash.com/photo-1470124182917-cc6e71b22ecc?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=86dfeecacc94fa3015529dff545832ef&auto=format&fit=crop&w=400&q=60');
+	background-size: cover;
+	background-position: right;
+	grid-column: span 4;
+}
+
+.recipe2 {
+	background: url('https://images.unsplash.com/photo-1463183665146-ce2ed31df6b0?ixlib=rb-0.3.5&s=27c750f47feade77f51d69d19686ca98&auto=format&fit=crop&w=400&q=60');
+	background-size: cover;
+	grid-column: span 4;
+}
+
+.recipe3 {
+	background: url('https://images.unsplash.com/photo-1469648034646-7911874fe62b?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=6733f519f46551f66241abe32a57d249&auto=format&fit=crop&w=400&q=60');
+	background-size: cover;
+	grid-column: span 4;
+}
+
+.recipe4 {
+	background: url('https://images.unsplash.com/photo-1469533667357-006056eaf780?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=c54ac0e5287359bd2a06c160558b5253&auto=format&fit=crop&w=400&q=60');
+	background-size: cover;
+	grid-column: span 4;
+}
+/* contact starts here */
+
+form{
+	margin: 2em 4em;
+	border: 1px solid black;
+	box-shadow: 34px 6px 46px 7px rgb(231, 184, 222), -13px 6px 46px 7px rgb(34, 221, 221);
+	grid-area: ;
+}
+.contact {
+	text-align: center;
+	grid-area: signup;
+}
+
+
+/* contact ends here */
+
+/*  Leave a Comment Section */
+
+.chatSection {
+	padding: 2em;
+	color: white;
+	background: linear-gradient(to right, rgb(231, 184, 222), rgb(34, 221, 221));
+	grid-area: chat;
+}
+
+
+ul.commentBox {
+	list-style-type: circle;
+}
+
+li.comments {
+	border: 1px solid white;
+	text-align: center;
+
+}
+
+.inputSection {
+	text-align: center;
+	padding: 2em 0;
+}
+
+
+footer {
+	background: #000;
+	color: #fff;
+	grid-area: contact;
+}
+
+
+.container {
+	display: grid;
+	grid-template-columns: repeat(12, 1fr);
+	grid-template-areas: "desk    desk    desk    desk    desk    desk    desk    desk   desk    desk    desk   desk"
+						 "banner    banner    banner    banner    banner    banner    banner    banner   banner    banner    banner   banner"
+						 "recipe  recipe  recipe recipe  recipe  recipe  recipe  recipe  recipe  recipe  recipe  recipe"
+						 'signup    signup    signup    signup    signup    signup    chat  chat chat  chat  chat chat'
+						 'contact   contact   contact   contact   contact   contact   contact   contact   contact   contact   contact   contact'
+}
+
+
+
+
+/*=========Navbar display none when width is 910 or lower===============*/
+@media (max-width: 910px) {
+
+	.hamburger {
+	height: 3em;
+	background: linear-gradient(to right, rgb(202, 186, 228), rgb(72, 174, 183));
+}
+	
+	div.desk {
+		display: none;
+	}
+
+	div.mob {
+		position: fixed;
+		display: block;
+		width: 100%;
+		background: #fff;
+		color: rgb(72, 174, 183);
+	}
+
+
+
+	.fas {
+		height: 1em;
+		float: right;
+		padding-right: 1em;
+		padding-top: 16px;
+		font-size: 2em;
+		color: black;
+		cursor: pointer;
+	}
+
+	.mob {
+		position: absolute;
+		z-index: 1;
+	}
+
+	.mob .navbarMob {
+		display: none;
+		text-align: center;
+	}
+
+	.mob .navbarMob a {
+		color: rgb(72, 174, 183);
+
+	}
+
+   /*========New Recipe grid layout============*/
+   div.newRecipe {
+	width: 100%;
+	display: block;
+	grid-template-rows: auto;
+	grid-template-columns: repeat(3, 1fr);
+	grid-area: recipe;
+	}
+
+	div.newRecipe h1{
+		display: block;
+		position: relative;
+		grid-row: 2;
+		grid-column: span 3;
+	}
+	
+	div.newRecipe h3{
+		display: grid;
+		position: relative;
+		grid-row: 1;
+		grid-column: 1 / span 3;
+	}
+
+	.box {
+		width: 100%;
+		display: grid;
+		padding: 1%;
+		position: relative;
+		grid-auto-columns: 1fr;
+		grid-template-rows: repeat(3, 1fr);
+	}
+
+	.content {
+		height: 80vh;
+	}
+
+	.contentBox1 {
+		grid-row: 1;
+		position: relative;
+		grid-column: span 4;
+		
+	}
+
+	.contentBox2 {
+		position: relative;		
+		grid-row: 2;
+		grid-column: span 4;
+		
+	}
+	.contentBox3 {
+		grid-row: 3;
+		position: relative;
+		grid-column: span 4;
+	}
+	.contentBox4 {
+		grid-row: 4;
+		position: relative;
+		grid-column: span 4;
+		
+	}
+
+	.chatSection {
+		grid-area: chat;
+	}
+
+	.contact {
+	text-align: center;
+	grid-area: signup;
+}
+
+	.container {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-template-areas: "mob mob mob"
+						 "banner banner banner"
+						 "recipe recipe recipe"
+						 'chat chat chat'
+						 "signup signup signup"
+						 'contact contact contact';
+	}
+}
+	

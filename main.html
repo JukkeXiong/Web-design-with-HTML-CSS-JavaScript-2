@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Project 4</title>
+	<link rel="stylesheet" href="main.css">
+	<link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css">
+</head>
+<body>
+	<section class="container">
+		
+		<div class="desk">
+			<div class="logo">LOGO</div>
+			<ul class="navbarDesk">
+				<li class="navBtn homeBtn"><a href="#">HOME</a></li>
+				<li class="navBtn aboutBtn"><a href="#">ABOUT ME</a>
+					<ul class="navbarNest">
+						<li><a href="#">Projects</a></li>
+						<li><a href="#">Vlog</a></li>
+						<li class="navBtn homeBtn"><a href="#">BLOG</a></li>
+					</ul>
+				</li>
+				<li class="navBtn homeBtn"><a href="#">RECIPES</a></li>
+				<li class="navBtn homeBtn"><a href="#">CONTACT</a></li>
+				
+			</ul>
+		</div>
+		
+		<div class="mob">
+			<div class="hamburger">
+			<i class="fas fa-bars"></i>
+
+			<i class="fas fa-times"></i>
+			</div>
+
+			<ul class="navbarMob">
+				<h2>
+				<li class="mobnavBtn homeBtn"><a href="#home">HOME</a></li>
+				<li class="mobnavBtn" id="aboutBtn">ABOUT ME
+					<ul class="toggleList">
+						<li><a href="#Projects">Projects</a></li>
+						<li><a href="#Vlog">Vlog</a></li>
+						<li class="mobnavBtn homeBtn"><a href="#Blog">BLOG</a></li>
+					</ul>
+				</li>
+				<li class="mobnavBtn homeBtn"><a href="#">RECIPES</a></li>
+				<li class="mobnavBtn homeBtn"><a href="#">CONTACT</a></li>
+				</h2>
+			</ul>
+		</div>
+
+
+		<div class="banner">
+			<h1>The Food Blog</h1>
+			<h3>MY BEST RECIPES FOR THE TASTE BUDS</h3>
+			<div class="search"><input type="search" result="5" placeholder="find a recipe" class="searchStyle"  autosave="google"></div>
+		</div>
+
+
+		<div class="newRecipe">
+			<h1>New Recipes</h1>
+			<h3>RECENT RECIPES ON THE BLOG</h3>
+			<div class="box">
+				<div class="contentBox1">
+					<div class="content recipe1"> <span class="likeBtn">like</span> </div>
+					<h3>Starberry Chocolate filled Macroon</h3>
+					<p>adahbdsajd</p>
+				</div>
+				<div class="contentBox2">
+					<div class="content recipe2"> 
+						<span class="likeBtn">like</span> 
+					</div>
+					<h3>Bake Garlic Parmesan French Fries</h3>
+					<p>asdasdsad</p>
+				</div>
+				<div class="contentBox3">
+					<div class="content recipe3"> <span class="likeBtn">like</span> </div>
+					<h3>My Favorite Home Snack</h3>
+					<p>asdsadsad</p>
+				</div>
+				<div class="contentBox4">
+					<div class="content recipe4"> <span class="likeBtn">like</span> </div>
+					<h3>Christmad Style Cheese Cake</h3>
+					<p>asdsada</p>
+				</div>
+			</div>
+		</div>
+
+		<div class="contact">
+			<form action="#" method="get">
+				<h1>
+					Contact Us
+				</h1>
+				<div>
+					<p>First Name:</p>
+					<input type="text" placeholder="First Name">
+				</div>
+				<div>
+					<p>Last Name:</p>
+					<input type="text" placeholder="Last Name">
+				</div>
+				<div>
+					<p>Email:</p>
+					<input type="email" placeholder="Email">
+				</div>
+				<div>
+					 <input type="submit" value="Submit">
+				</div>
+			</form>
+		</div>
+
+		<div class="chatSection">
+			<div class="leaveACmt">
+				<h1>Leave a Comment</h1>
+				<ul class="commentBox">
+					<li class="comments">
+						Awesome blog!
+					</li>
+					<li class="comments">
+						My go to Food Blog! You're Awesome!
+					</li>
+					<li class="comments">
+						Finally, a new recipe!
+					</li>
+				</ul>
+				<div class="inputSection">
+					<input id="inputValue" type="text" placeholder="Leave a comment">
+					<button id="postComment">
+						Post
+					</button>
+				</div>
+				
+			</div>
+		</div>
+
+		<footer>
+			<p>
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit ut pariatur laboriosam eos a commodi blanditiis libero iste quod rem.
+			</p>
+			<h4>
+				Contact Info: <br>
+				1-(234)567-8900
+			</h4>
+		</footer>		
+
+
+	</section>
+
+<script type="text/javascript" src="main.js"></script>	
+</body>
+</html>
